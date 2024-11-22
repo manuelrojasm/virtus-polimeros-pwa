@@ -32,8 +32,8 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
-   cd nombre-del-repositorio
+   git clone https://github.com/manuelrojasm/virtus-polimeros-pwa.git
+   cd virtus-polimeros-pwa
    ```
 
 2. **Instala las dependencias**:
