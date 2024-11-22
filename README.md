@@ -1,11 +1,11 @@
 ---
+title: "PLATAFORMA WEB PARA LA CAPACITACIÓN Y CONCIENTIZACIÓN EN LA CONTAMINACIÓN POR POLÍMEROS Y EL USO DE BIOPOLÍMERO"
+description: |
+  Este proyecto propone el desarrollo de una plataforma web diseñada para educar y concientizar a la comunidad sobre el impacto ambiental de los polímeros sintéticos y los beneficios del uso de biopolímeros. 
+  La plataforma tiene como objetivo proporcionar herramientas informativas y prácticas que promuevan el reciclaje, la correcta gestión de residuos y la transición hacia alternativas más sostenibles. 
+  Además, busca sensibilizar a los usuarios sobre la importancia de adoptar hábitos responsables para mitigar la contaminación y proteger el planeta.
 
-# 🌱 **PLATAFORMA WEB PARA LA CAPACITACIÓN Y CONCIENTIZACIÓN EN LA CONTAMINACIÓN POR POLÍMEROS Y EL USO DE BIOPOLÍMERO** 🌳
-
-> Este **proyecto** propone el desarrollo de una plataforma web diseñada para educar y concientizar a la comunidad sobre el impacto ambiental de los polímeros sintéticos y los beneficios del uso de biopolímeros. La plataforma tiene como objetivo proporcionar herramientas informativas y prácticas que promuevan el reciclaje, la correcta gestión de residuos y la transición hacia alternativas más sostenibles. Además, busca sensibilizar a los usuarios sobre la importancia de adoptar hábitos responsables para mitigar la contaminación y proteger el planeta.
-
-Con esta iniciativa, se espera no solo generar conocimiento, sino también fomentar la acción colectiva hacia un futuro más sostenible, promoviendo el uso de biopolímeros y prácticas amigables con el medio ambiente.
-
+  Con esta iniciativa, se espera no solo generar conocimiento, sino también fomentar la acción colectiva hacia un futuro más sostenible, promoviendo el uso de biopolímeros y prácticas amigables con el medio ambiente.
 ---
 
 ## 🚀 **Características principales**
