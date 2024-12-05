@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Box, Toolbar } from '@mui/material';
-import Header from '../components/Header';
+import React, { useState } from "react";
+import { Box, Toolbar } from "@mui/material";
+import Header from "../components/Header";
 // import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer'; // Importa el Footer
+import Footer from "../components/Footer"; // Importa el Footer
+import Slider from "../components/Slider";
 
 const MainLayout = ({ children }) => {
   const [open, setOpen] = useState(true);
@@ -12,27 +13,24 @@ const MainLayout = ({ children }) => {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <Box sx={{ display: "flex", flexDirection: "column" }}>
       {/* Header */}
       <Header onMenuClick={handleMenuClick} />
-
       {/* Contenedor principal con Sidebar */}
-      <Box sx={{ display: 'flex', flex: 1 }}>
-        {/* <Sidebar /> */}
-        <Box
-          component="main"
-          sx={{
-            flexGrow: 1,
-            backgroundColor: (theme) => theme.palette.background.default,
-            padding: 3,
-            minHeight: 'calc(100vh - 64px)', // Ajusta para el Header
-          }}
-        >
-          <Toolbar />
-          {children}
-        </Box>
+      <Box
+        component={"main"}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          flex: 1,
+          flexWrap: "nowrap",
+          alignContent: "center",
+          justifyContent: "flex-start",
+          alignItems: "center",
+        }}
+      >
+        {children}
       </Box>
-
       {/* Footer */}
       <Footer />
     </Box>

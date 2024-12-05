@@ -19,8 +19,8 @@ const Logo = ({ display }) => {
           src={logo}
           alt={"logo PlasTIC"}
           loading="lazy"
-          width={"60px"}
-          height={"60px"}
+          width={"80px"}
+          height={"80px"}
           onClick={handleRedirectHome}
         />
       </Box>

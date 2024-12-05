@@ -41,7 +41,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: 'Lato',
     h1: {
       fontSize: '2rem',
       fontWeight: 700,

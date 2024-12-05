@@ -11,15 +11,17 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import Icon from '@mui/material/Icon';
+
 import { useNavigate } from "react-router-dom";
 import Logo from "./Logo";
 
 const pages = [
-  { name: "Acerca de Nosotros", link: "/AboutUs" },
-  { name: "Evidencias & Resultados", link: "/EvidenceResults" },
-  { name: "Noticias & Eventos", link: "/NewsEvents" },
-  { name: "Blog", link: "/Blog" },
-  { name: "Certificate", link: "/login" },
+  { name: "Acerca de Nosotros", link: "/AboutUs", icon: "home" },
+  { name: "Evidencias & Resultados", link: "/EvidenceResults", icon: "eco" },
+  { name: "Noticias & Eventos", link: "/NewsEvents", icon: "event" },
+  { name: "Blog", link: "/Blog", icon: "tabs" },
+  { name: "Certificate", link: "/login", icon: "workspace_premium" },
 ];
 
 const settings = ["Profile", "Account", "Logout"];
@@ -52,14 +54,14 @@ function ResponsiveAppBar() {
     <AppBar
       position="sticky"
       sx={{
-        backgroundColor: "tertiary.main", // Color del tema
+        backgroundColor: "tertiary.main",
         boxShadow: "none",
         borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-        <Logo display={{ xs: "none", md: "flex" }} />
+        <Toolbar disableGutters sx={{height:'90px'}}>
+          <Logo display={{ xs: "none", md: "flex" }} />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -114,14 +116,18 @@ function ResponsiveAppBar() {
                 onClick={() => handleRedirect(page.link)}
                 sx={{
                   m: 1,
+                  height: '85px',
                   color: page.name === "Certificate" ? "text.primary" : "white",
-                  display: "block",
+                  display: "flex",
+                  fontSize: '16px',
+                  fontWeight: 'bold',
                   backgroundColor:
                     page.name === "Certificate"
                       ? "warning.main"
                       : "transparent",
                 }}
               >
+                <Icon sx={{fontSize: '18px', margin: '5px'}}>{page.icon}</Icon>
                 {page.name.toUpperCase()}
               </Button>
             ))}
